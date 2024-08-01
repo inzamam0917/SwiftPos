@@ -1,0 +1,16 @@
+C:\Users\LENOVO\source\repos\SwiftPos\SwiftPos.Dto\bin\Debug\net8.0\SwiftPos.Dto.deps.json
+C:\Users\LENOVO\source\repos\SwiftPos\SwiftPos.Dto\bin\Debug\net8.0\SwiftPos.Dto.dll
+C:\Users\LENOVO\source\repos\SwiftPos\SwiftPos.Dto\bin\Debug\net8.0\SwiftPos.Dto.pdb
+C:\Users\LENOVO\source\repos\SwiftPos\SwiftPos.Dto\bin\Debug\net8.0\SwiftPos.Model.dll
+C:\Users\LENOVO\source\repos\SwiftPos\SwiftPos.Dto\bin\Debug\net8.0\SwiftPos.Model.pdb
+C:\Users\LENOVO\source\repos\SwiftPos\SwiftPos.Dto\obj\Debug\net8.0\SwiftPos.Dto.csproj.AssemblyReference.cache
+C:\Users\LENOVO\source\repos\SwiftPos\SwiftPos.Dto\obj\Debug\net8.0\SwiftPos.Dto.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\LENOVO\source\repos\SwiftPos\SwiftPos.Dto\obj\Debug\net8.0\SwiftPos.Dto.AssemblyInfoInputs.cache
+C:\Users\LENOVO\source\repos\SwiftPos\SwiftPos.Dto\obj\Debug\net8.0\SwiftPos.Dto.AssemblyInfo.cs
+C:\Users\LENOVO\source\repos\SwiftPos\SwiftPos.Dto\obj\Debug\net8.0\SwiftPos.Dto.csproj.CoreCompileInputs.cache
+C:\Users\LENOVO\source\repos\SwiftPos\SwiftPos.Dto\obj\Debug\net8.0\SwiftPos.Dto.sourcelink.json
+C:\Users\LENOVO\source\repos\SwiftPos\SwiftPos.Dto\obj\Debug\net8.0\SwiftPos.645C8525.Up2Date
+C:\Users\LENOVO\source\repos\SwiftPos\SwiftPos.Dto\obj\Debug\net8.0\SwiftPos.Dto.dll
+C:\Users\LENOVO\source\repos\SwiftPos\SwiftPos.Dto\obj\Debug\net8.0\refint\SwiftPos.Dto.dll
+C:\Users\LENOVO\source\repos\SwiftPos\SwiftPos.Dto\obj\Debug\net8.0\SwiftPos.Dto.pdb
+C:\Users\LENOVO\source\repos\SwiftPos\SwiftPos.Dto\obj\Debug\net8.0\ref\SwiftPos.Dto.dll

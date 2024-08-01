@@ -9,8 +9,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="13.0.1" />
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.20.1" />
+    <PackageReference Include="NLog" Version="5.3.2" />
+    <PackageReference Include="NLog.Web.AspNetCore" Version="5.3.11" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SwiftPos.Dto\SwiftPos.Dto.csproj" />
+    <ProjectReference Include="..\SwiftPos.Middleware\SwiftPos.Middleware.csproj" />
+    <ProjectReference Include="..\SwiftPos.Services\SwiftPos.Services.csproj" />
   </ItemGroup>
 
 </Project>
