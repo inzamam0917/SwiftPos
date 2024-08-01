@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SwiftPos")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+af1636255b2e04b5d5fd1980501f44a45ab0b1ac")]
 [assembly: System.Reflection.AssemblyProductAttribute("SwiftPos")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SwiftPos")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
