@@ -75,12 +75,12 @@ namespace SwiftPos.Repositories.UserRepository
         {
             try
             {
-                if (string.IsNullOrEmpty(user.UserID))
+                if (string.IsNullOrEmpty(user.id))
                 {
-                    user.UserID = Guid.NewGuid().ToString(); 
+                    user.id = Guid.NewGuid().ToString(); 
                 }
 
-                var partitionKeyValue = user.UserID;
+                var partitionKeyValue = user.id;
 
                 await _container.CreateItemAsync(user, new PartitionKey(partitionKeyValue));
             }
