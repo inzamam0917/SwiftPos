@@ -1,0 +1,6 @@
+@SwiftPos_HostAddress = http://localhost:5259
+
+GET {{SwiftPos_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35013.160
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SwiftPos", "SwiftPos\SwiftPos.csproj", "{0F6470E2-F1D9-4B67-B085-F4F7A73E0165}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0F6470E2-F1D9-4B67-B085-F4F7A73E0165}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F6470E2-F1D9-4B67-B085-F4F7A73E0165}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F6470E2-F1D9-4B67-B085-F4F7A73E0165}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F6470E2-F1D9-4B67-B085-F4F7A73E0165}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {72B7077F-4F10-4457-9064-226C1B40F344}
+	EndGlobalSection
+EndGlobal
