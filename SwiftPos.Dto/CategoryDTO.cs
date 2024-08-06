@@ -9,8 +9,7 @@ namespace SwiftPos.Dto
 {
     public class CategoryDTO
     {
-        [Required]
-        public string Id { get; set; }  
+        public string categoryid { get; set; }  
 
         [Required]
         [StringLength(100, ErrorMessage = "Name length can't be more than 100.")]
