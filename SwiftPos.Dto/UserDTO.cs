@@ -9,8 +9,6 @@ namespace SwiftPos.Dto
 {
     public class UserDTO
     {
-        [Required]
-        public string UserID { get; set; }
 
         [Required]
         [StringLength(100, ErrorMessage = "Name length can't be more than 100.")]

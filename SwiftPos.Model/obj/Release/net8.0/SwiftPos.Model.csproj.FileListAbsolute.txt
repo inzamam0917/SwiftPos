@@ -1,0 +1,12 @@
+C:\Users\LENOVO\source\repos\SwiftPos\SwiftPos.Model\bin\Release\net8.0\SwiftPos.Model.deps.json
+C:\Users\LENOVO\source\repos\SwiftPos\SwiftPos.Model\bin\Release\net8.0\SwiftPos.Model.dll
+C:\Users\LENOVO\source\repos\SwiftPos\SwiftPos.Model\bin\Release\net8.0\SwiftPos.Model.pdb
+C:\Users\LENOVO\source\repos\SwiftPos\SwiftPos.Model\obj\Release\net8.0\SwiftPos.Model.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\LENOVO\source\repos\SwiftPos\SwiftPos.Model\obj\Release\net8.0\SwiftPos.Model.AssemblyInfoInputs.cache
+C:\Users\LENOVO\source\repos\SwiftPos\SwiftPos.Model\obj\Release\net8.0\SwiftPos.Model.AssemblyInfo.cs
+C:\Users\LENOVO\source\repos\SwiftPos\SwiftPos.Model\obj\Release\net8.0\SwiftPos.Model.csproj.CoreCompileInputs.cache
+C:\Users\LENOVO\source\repos\SwiftPos\SwiftPos.Model\obj\Release\net8.0\SwiftPos.Model.sourcelink.json
+C:\Users\LENOVO\source\repos\SwiftPos\SwiftPos.Model\obj\Release\net8.0\SwiftPos.Model.dll
+C:\Users\LENOVO\source\repos\SwiftPos\SwiftPos.Model\obj\Release\net8.0\refint\SwiftPos.Model.dll
+C:\Users\LENOVO\source\repos\SwiftPos\SwiftPos.Model\obj\Release\net8.0\SwiftPos.Model.pdb
+C:\Users\LENOVO\source\repos\SwiftPos\SwiftPos.Model\obj\Release\net8.0\ref\SwiftPos.Model.dll

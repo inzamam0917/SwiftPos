@@ -18,7 +18,7 @@ namespace SwiftPos.Repositories.UserRepository
 
         public UserRepository(CosmosClient cosmosClient, IConfiguration configuration)
         {
-            var databaseName = configuration["CosmosDb:DatabaseName"];
+            var databaseName = "swiftpos";
             _container = cosmosClient.GetContainer(databaseName, "User");
         }
 
@@ -100,13 +100,22 @@ namespace SwiftPos.Repositories.UserRepository
         {
             try
             {
-                if (string.IsNullOrEmpty(user.UserID))
+                if (string.IsNullOrEmpty(user.id))
                 {
-                    user.UserID = Guid.NewGuid().ToString();
+                    throw new ArgumentException("User ID cannot be null or empty");
                 }
 
-                var partitionKeyValue = user.UserID;
-                await _container.UpsertItemAsync(user, new PartitionKey(partitionKeyValue));
+                var partitionKeyValue = user.id;
+
+                var existingUserResponse = await _container.ReadItemAsync<SwiftPos.Model.User>(user.id, new PartitionKey(partitionKeyValue));
+                var existingUser = existingUserResponse.Resource;
+
+                if (existingUser != null)
+                {
+                    await _container.ReplaceItemAsync(user, user.id, new PartitionKey(partitionKeyValue));
+                    Console.WriteLine("Existing user replaced");
+                    Console.WriteLine(user.id,user.Email,user.Username);
+                }
             }
             catch (CosmosException ex)
             {
@@ -119,5 +128,6 @@ namespace SwiftPos.Repositories.UserRepository
                 throw;
             }
         }
+
     }
 }

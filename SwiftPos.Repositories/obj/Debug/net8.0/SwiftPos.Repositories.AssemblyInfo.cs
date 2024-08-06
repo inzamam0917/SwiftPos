@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SwiftPos.Repositories")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+306626b0e9f43e502d3636df61f241c472f9a342")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d65bc12fbca7f47f5db25dc19f4d170ab0d2660b")]
 [assembly: System.Reflection.AssemblyProductAttribute("SwiftPos.Repositories")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SwiftPos.Repositories")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

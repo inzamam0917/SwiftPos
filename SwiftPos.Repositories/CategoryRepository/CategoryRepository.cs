@@ -15,7 +15,7 @@ namespace SwiftPos.Repositories.CategoryRepository
 
         public CategoryRepository(CosmosClient cosmosClient, IConfiguration configuration)
         {
-            var databaseName = configuration["CosmosDb:DatabaseName"];
+            var databaseName = configuration["DatabaseName"]!.ToString();
             _container = cosmosClient.GetContainer(databaseName, "Category");
         }
 

@@ -14,7 +14,7 @@ namespace SwiftPos.Repositories.ProductRepository
 
         public ProductRepository(CosmosClient cosmosClient, IConfiguration configuration)
         {
-            var databaseName = configuration["CosmosDb:DatabaseName"];
+            var databaseName = configuration["DatabaseName"]!.ToString();
             _productContainer = cosmosClient.GetContainer(databaseName, "Product");
             _categoryContainer = cosmosClient.GetContainer(databaseName, "Category");
         }

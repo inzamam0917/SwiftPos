@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "SwiftPos.Dto/1.0.0": {
+        "dependencies": {
+          "SwiftPos.Model": "1.0.0"
+        },
+        "runtime": {
+          "SwiftPos.Dto.dll": {}
+        }
+      },
+      "SwiftPos.Model/1.0.0": {
+        "runtime": {
+          "SwiftPos.Model.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "SwiftPos.Dto/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "SwiftPos.Model/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

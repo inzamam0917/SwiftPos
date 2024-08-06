@@ -14,4 +14,8 @@
     <ProjectReference Include="..\SwiftPos.Data\SwiftPos.Data.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="UserRepository\ProductService\" />
+  </ItemGroup>
+
 </Project>

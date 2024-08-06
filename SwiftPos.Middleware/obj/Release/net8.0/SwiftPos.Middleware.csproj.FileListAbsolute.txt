@@ -1,0 +1,13 @@
+C:\Users\LENOVO\source\repos\SwiftPos\SwiftPos.Middleware\bin\Release\net8.0\SwiftPos.Middleware.deps.json
+C:\Users\LENOVO\source\repos\SwiftPos\SwiftPos.Middleware\bin\Release\net8.0\SwiftPos.Middleware.dll
+C:\Users\LENOVO\source\repos\SwiftPos\SwiftPos.Middleware\bin\Release\net8.0\SwiftPos.Middleware.pdb
+C:\Users\LENOVO\source\repos\SwiftPos\SwiftPos.Middleware\obj\Release\net8.0\SwiftPos.Middleware.csproj.AssemblyReference.cache
+C:\Users\LENOVO\source\repos\SwiftPos\SwiftPos.Middleware\obj\Release\net8.0\SwiftPos.Middleware.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\LENOVO\source\repos\SwiftPos\SwiftPos.Middleware\obj\Release\net8.0\SwiftPos.Middleware.AssemblyInfoInputs.cache
+C:\Users\LENOVO\source\repos\SwiftPos\SwiftPos.Middleware\obj\Release\net8.0\SwiftPos.Middleware.AssemblyInfo.cs
+C:\Users\LENOVO\source\repos\SwiftPos\SwiftPos.Middleware\obj\Release\net8.0\SwiftPos.Middleware.csproj.CoreCompileInputs.cache
+C:\Users\LENOVO\source\repos\SwiftPos\SwiftPos.Middleware\obj\Release\net8.0\SwiftPos.Middleware.sourcelink.json
+C:\Users\LENOVO\source\repos\SwiftPos\SwiftPos.Middleware\obj\Release\net8.0\SwiftPos.Middleware.dll
+C:\Users\LENOVO\source\repos\SwiftPos\SwiftPos.Middleware\obj\Release\net8.0\refint\SwiftPos.Middleware.dll
+C:\Users\LENOVO\source\repos\SwiftPos\SwiftPos.Middleware\obj\Release\net8.0\SwiftPos.Middleware.pdb
+C:\Users\LENOVO\source\repos\SwiftPos\SwiftPos.Middleware\obj\Release\net8.0\ref\SwiftPos.Middleware.dll

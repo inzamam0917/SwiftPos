@@ -32,7 +32,8 @@ namespace SwiftPos.Controllers.UserController
                     Username = userDto.Username,
                     Email = userDto.Email,
                     Password = userDto.Password,
-                    UserRole = (UserRole)userDto.UserRole
+                    UserRole = (UserRole)userDto.UserRole,
+                    Name = userDto.Name,
                 };
 
                 await _userService.RegisterUserAsync(user);
@@ -78,7 +79,10 @@ namespace SwiftPos.Controllers.UserController
                 return NotFound(new { message = "User not found" });
             }
 
-            return Ok(new { message = "User role updated successfully" });
+            return Ok(new
+            {
+                message = "User role updated successfully",
+            });
         }
 
         [HttpGet("allusers")]
@@ -87,12 +91,14 @@ namespace SwiftPos.Controllers.UserController
             var users = await _userService.GetAllUsersAsync();
             var result = users.Select(user => new UserDTO
             {
-                UserID = user.UserID,
                 Username = user.Username,
-                Email = user.Email
+                Email = user.Email,
+                UserRole = (int)user.UserRole,
+                Name = user.Name,
             }).ToList();
 
             return Ok(result);
         }
+
     }
 }

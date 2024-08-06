@@ -8,6 +8,12 @@ using System.Text;
 using NLog.Extensions.Logging;
 using SwiftPos.AutoMapper;
 using SwiftPos.Services.AuthService;
+using Azure.Identity;
+using Microsoft.Extensions.Configuration;
+using Azure.Security.KeyVault.Secrets;
+using System.IO;
+using Microsoft.Extensions.Configuration.AzureKeyVault;
+using Microsoft.Extensions.DependencyInjection;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -67,12 +73,28 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJw
 //builder.Services.AddDbContext<DBContextEntity>(options =>
 //    options.UseInMemoryDatabase("InMemoryDb"));
 
+var keyVaultUri = builder.Configuration.GetSection("KeyVault:KeyVaultURL").Value;
+var clientId = builder.Configuration.GetSection("KeyVault:ClientId").Value;
+var clientSecret = builder.Configuration.GetSection("KeyVault:ClientSecret").Value;
+var directoryId = builder.Configuration.GetSection("KeyVault:DirectoryId").Value;
+
+var credential = new ClientSecretCredential(directoryId.ToString(), clientId.ToString(), clientSecret!.ToString());
+var secretClient = new SecretClient(new Uri(keyVaultUri.ToString()), credential);
+
+builder.Configuration.AddAzureKeyVault(keyVaultUri!.ToString(),clientId!.ToString(),clientSecret!.ToString(), new DefaultKeyVaultSecretManager());
+
+var client = new SecretClient(new Uri(keyVaultUri!.ToString()), credential);
+
 builder.Services.AddSingleton<CosmosClient>(serviceProvider =>
 {
     var configuration = serviceProvider.GetRequiredService<IConfiguration>();
-    var endpointUrl = configuration["CosmosDb:AccountEndpoint"];
-    var primaryKey = configuration["CosmosDb:AccountKey"];
-    var databaseName = configuration["CosmosDb:DatabaseName"];
+    var endpointUrl = client.GetSecret("AccountEndpoint").Value.Value.ToString();
+    var primaryKey = client.GetSecret("AccountKey").Value.Value.ToString();
+    var databaseName = client.GetSecret("DatabaseName").Value.Value.ToString();
+
+    //var endpointUrl = configuration["AccountEndpoint"]!.ToString();
+    //var primaryKey = configuration["AccountEndpoint"]!.ToString();
+    //var databaseName = configuration["AccountEndpoint"]!.ToString();
     return new CosmosClient(endpointUrl, primaryKey);
 });
 
