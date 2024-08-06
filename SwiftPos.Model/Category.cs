@@ -10,7 +10,8 @@ namespace SwiftPos.Model
     public class Category
     {
         [Key]
-        public string Id { get; set; } = Guid.NewGuid().ToString();
+        public string categoryid { get; set; } = Guid.NewGuid().ToString();
+        public string id => categoryid;
 
         [Required]
         [StringLength(100, ErrorMessage = "Name length can't be more than 100.")]
@@ -22,7 +23,7 @@ namespace SwiftPos.Model
 
         public Category(string name)
         {
-            Id = Guid.NewGuid().ToString();  
+            categoryid = Guid.NewGuid().ToString();  
             Name = name;
         }
     }

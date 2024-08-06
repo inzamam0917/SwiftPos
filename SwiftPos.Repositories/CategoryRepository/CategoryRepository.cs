@@ -23,11 +23,11 @@ namespace SwiftPos.Repositories.CategoryRepository
         {
             try
             {
-                if (string.IsNullOrEmpty(category.Id))
+                if (string.IsNullOrEmpty(category.categoryid))
                 {
-                    category.Id = Guid.NewGuid().ToString();   
+                    category.categoryid = Guid.NewGuid().ToString();   
                 }
-                await _container.CreateItemAsync(category, new PartitionKey(category.Id));
+                await _container.CreateItemAsync(category, new PartitionKey(category.categoryid));
             }
             catch (CosmosException ex)
             {
@@ -64,6 +64,7 @@ namespace SwiftPos.Repositories.CategoryRepository
                 var response = await iterator.ReadNextAsync();
                 categories.AddRange(response);
             }
+            Console.WriteLine("Categories: ", categories);
             return categories;
         }
 
@@ -71,11 +72,11 @@ namespace SwiftPos.Repositories.CategoryRepository
         {
             try
             {
-                if (string.IsNullOrEmpty(category.Id))
+                if (string.IsNullOrEmpty(category.categoryid))
                 {
-                    category.Id = Guid.NewGuid().ToString(); 
+                    category.categoryid = Guid.NewGuid().ToString(); 
                 }
-                await _container.UpsertItemAsync(category, new PartitionKey(category.Id));
+                await _container.UpsertItemAsync(category, new PartitionKey(category.categoryid));
             }
             catch (CosmosException ex)
             {
@@ -93,7 +94,7 @@ namespace SwiftPos.Repositories.CategoryRepository
         {
             try
             {
-                await _container.DeleteItemAsync<Category>(category.Id, new PartitionKey(category.Id));
+                await _container.DeleteItemAsync<Category>(category.categoryid, new PartitionKey(category.categoryid));
             }
             catch (CosmosException ex)
             {

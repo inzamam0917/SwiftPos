@@ -3,7 +3,9 @@ using Microsoft.Azure.Cosmos;
 using Microsoft.IdentityModel.Tokens;
 using SwiftPos.Middleware;
 using SwiftPos.Repositories.UserRepository;
+using SwiftPos.Repositories.CategoryRepository;
 using SwiftPos.Services.UserService;
+using SwiftPos.Services.CategoryService;
 using System.Text;
 using NLog.Extensions.Logging;
 using SwiftPos.AutoMapper;
@@ -26,14 +28,14 @@ builder.Services.AddLogging(logging =>
 builder.Services.AddSingleton<ILoggerProvider, NLogLoggerProvider>();
 
 // Register Repositories
-//builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
+builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
 builder.Services.AddScoped<IUserRepository, UserRepository>();
 //builder.Services.AddScoped<IProductRepository, ProductRepository>();
 //builder.Services.AddScoped<ISaleRepository, SaleRepository>();
 //builder.Services.AddScoped<IPurchaseRepository, PurchaseRepository>();
 
-// Register Services
-//builder.Services.AddScoped<ICategoryService, CategoryService>();
+//Register Services
+builder.Services.AddScoped<ICategoryService, CategoryService>();
 builder.Services.AddScoped<IUserService, UserService>();
 //builder.Services.AddScoped<IProductService, ProductService>();
 //builder.Services.AddScoped<ISaleService, SaleService>();
