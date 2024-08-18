@@ -1,16 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace SwiftPos.Model
 {
     public class ProductItem
     {
         [Key]
-        public string ProductItemId { get; set; } = Guid.NewGuid().ToString();  
+        public string ProductItemId { get; set; } = Guid.NewGuid().ToString();
 
         [Required]
         public string SaleId { get; set; }
@@ -34,14 +31,14 @@ namespace SwiftPos.Model
 
         public ProductItem(string productId, int quantity)
         {
-            ProductItemId = Guid.NewGuid().ToString();  
+            ProductItemId = Guid.NewGuid().ToString();
             ProductId = productId;
             Quantity = quantity;
         }
 
         public ProductItem(Product product, int quantity)
         {
-            ProductItemId = Guid.NewGuid().ToString();  
+            ProductItemId = Guid.NewGuid().ToString();
             Product = product;
             ProductId = product.ProductId;
             Quantity = quantity;
@@ -50,6 +47,22 @@ namespace SwiftPos.Model
         public void AddQuantity(int quantity)
         {
             Quantity += quantity;
+        }
+
+        // Method to remove a quantity from the ProductItem
+        public void RemoveQuantity(int quantity)
+        {
+            if (quantity <= 0)
+            {
+                throw new ArgumentException("Quantity to remove must be greater than zero.");
+            }
+
+            if (quantity > Quantity)
+            {
+                throw new InvalidOperationException("Cannot remove more quantity than is present in the item.");
+            }
+
+            Quantity -= quantity;
         }
 
         public decimal TotalAmount

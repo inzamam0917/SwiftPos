@@ -73,7 +73,7 @@ namespace SwiftPos.Repositories.ProductRepository
             {
                 if (string.IsNullOrEmpty(product.ProductId))
                 {
-                    product.ProductId = Guid.NewGuid().ToString(); // Generate a new unique id if it's not set
+                    product.ProductId = Guid.NewGuid().ToString();
                 }
                 await _productContainer.UpsertItemAsync(product, new PartitionKey(product.ProductId));
             }

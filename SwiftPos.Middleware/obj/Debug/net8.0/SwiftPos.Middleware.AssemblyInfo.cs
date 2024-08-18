@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SwiftPos.Middleware")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d65bc12fbca7f47f5db25dc19f4d170ab0d2660b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5176ab7b1c771e7413edc36d9cc9db62bcbb4093")]
 [assembly: System.Reflection.AssemblyProductAttribute("SwiftPos.Middleware")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SwiftPos.Middleware")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

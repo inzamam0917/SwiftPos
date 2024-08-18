@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SwiftPos.Model;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -9,19 +10,11 @@ namespace SwiftPos.Dto
 {
     public class SaleDTO
     {
-        [Required]
-        public string SaleId { get; set; }  
-
-        [Required]
-        public string CashierId { get; set; }  
-
-        [Required]
+        public string SaleId { get; set; }
+        public string CashierId { get; set; }
         public DateTime Date { get; set; }
-
-        [Required]
-        public string Status { get; set; }  
-
-        [Required]
-        public List<ProductItemDTO> Products { get; set; } = new List<ProductItemDTO>();
+        public List<SaleProductDTO> Products { get; set; } = new List<SaleProductDTO>();
+        public SaleStatus Status { get; set; }
+        public decimal TotalAmount { get; set; }
     }
 }

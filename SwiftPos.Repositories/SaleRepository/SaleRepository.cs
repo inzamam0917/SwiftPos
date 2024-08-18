@@ -41,6 +41,15 @@ namespace SwiftPos.Repositories.SaleRepository
             return response.FirstOrDefault();
         }
 
+        public async Task<Sale> GetSaleByIdAsync(string saleId) 
+        {
+            var query = new QueryDefinition("SELECT * FROM c WHERE c.id = @saleId")
+                .WithParameter("@saleId", saleId);
+            var iterator = _saleContainer.GetItemQueryIterator<Sale>(query);
+            var response = await iterator.ReadNextAsync();
+            return response.FirstOrDefault();
+        }
+
         public async Task AddSaleAsync(Sale sale)
         {
             await _saleContainer.CreateItemAsync(sale, new PartitionKey(sale.SaleId));

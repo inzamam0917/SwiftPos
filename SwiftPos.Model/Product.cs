@@ -10,7 +10,8 @@ namespace SwiftPos.Model
     public class Product
     {
         [Key]
-        public string ProductId { get; set; } = Guid.NewGuid().ToString(); 
+        public string ProductId { get; set; } = Guid.NewGuid().ToString();
+        public string id => ProductId;
 
         [Required]
         [StringLength(100, ErrorMessage = "Name length can't be more than 100.")]

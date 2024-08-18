@@ -11,6 +11,7 @@ namespace SwiftPos.Repositories.SaleRepository
     {
         Task<User> GetUserByIdAsync(string userId);
         Task<Product> GetProductByIdAsync(string productId);
+        Task<Sale> GetSaleByIdAsync(string saleId);
         Task AddSaleAsync(Sale sale);
         Task UpdateSaleAsync(Sale sale);
         Task UpdateProductAsync(Product product);

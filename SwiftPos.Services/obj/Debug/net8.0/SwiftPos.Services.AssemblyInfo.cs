@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SwiftPos.Services")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+18e0641c8ae89c93681ad02801a8501da05fc3cc")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5176ab7b1c771e7413edc36d9cc9db62bcbb4093")]
 [assembly: System.Reflection.AssemblyProductAttribute("SwiftPos.Services")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SwiftPos.Services")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
